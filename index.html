@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opti-Read</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="navbar">
   <div class="logo">
     <img src="logo.png" alt="Our Logo">
-    <span>OurBrand</span>
+    <span>Opti-Read</span>
   </div>
 
   <nav>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
       <li><a href="login.html">Login</a></li>
       <li><a href="signup.html" class="signup">Sign Up</a></li>
     </ul>
   </nav>
 </header>
 
- <form action="/upload" method="POST" enctype="multipart/form-data">
-   <label for="image">Upload image:</label>
-   <input type="file" id="image" name="image" accept="image/*" required>
-
-  <button type="submit">Upload</button>
- </form>
+ <section class="upload-section">
+  <div class="upload-box">
+    <h2>Upload Image</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+      <input type="file" id="image" name="image" accept="image/*" required>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</section>
 
  <h2 class="title">How to convert Image to text?</h2>
 
@@ -65,16 +70,16 @@
  <div class="info-container">
 
   <div class="info-box">
-    <h2>Image to text converter – what is this?</h2>
+    <h2>Image to text converter - what is this?</h2>
     <p>
       Online OCR tool is the Image to text converter based on Optical Character
       Recognition technology. Use our service to extract text and characters
       from scanned PDF documents (including multipage files), photos, and
-      digital camera–captured images.
+      digital camera-captured images.
       If you need to extract text from a photo, use our image to text converter.
       If you have a scanned book in PDF format and want to create a searchable
       PDF, our service is the best solution to convert PDF to Word or Excel.
-      You don’t need to waste time rewriting a scanned lecture—just upload the
+      You don't need to waste time rewriting a scanned lecture—just upload the
       file and convert image to text.
       Using advanced image pre-processing algorithms and OCR technology, our
       service scans text from your images and extracts it to any editable format.
@@ -82,7 +87,7 @@
   </div>
 
   <div class="info-box">
-    <h2>OCR tool – use cases</h2>
+    <h2>OCR tool - use cases</h2>
     <p>The image to text extractor has many uses:</p>
     <ul>
       <li>Extract text from scanned images</li>
@@ -96,6 +101,7 @@
 
 <footer class="footer">
   <p>© 2025 Opti-Read. All rights reserved.</p>
+
 </footer>
 
 </body>
